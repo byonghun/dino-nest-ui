@@ -50,6 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen }) => {
   const getInitials = (email: string) => {
     return email.charAt(0).toUpperCase();
   };
+
   return (
     <header className="fixed top-0 z-20 bg-slate-800 backdrop-blur-lg border-b border-slate-200 w-full">
       <div className="h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -57,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSidebarOpen }) => {
         <div className="flex items-center gap-4 mr-4">
           <button
             onClick={() => setSidebarOpen(true)}
-            className="md:hidden text-slate-600 hover:text-slate-900"
+            className="md:hidden text-slate-400 hover:text-slate-900"
           >
             <span className="sr-only">Open sidebar</span>
             <Menu className="h-6 w-6" />

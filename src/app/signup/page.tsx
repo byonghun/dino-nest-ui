@@ -98,7 +98,7 @@ export default function SignupPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-600"
+                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-400"
                 >
                   {showPassword ? (
                     <EyeOff className="h-5 w-5" />
@@ -109,7 +109,7 @@ export default function SignupPage() {
               </div>
             </div>
             {/* Terms and Privacy */}
-            <div className="flex items-center text-sm text-slate-600">
+            <div className="flex items-center text-sm text-slate-400">
               <input type="checkbox" required className="w-4 h-4 text-green-500 border-slate-300 rounded focus:ring-green-400 mr-2" />
               I agree to the <a href="#" className="text-green-600 hover:underline mx-1">Terms</a> and <a href="#" className="text-green-600 hover:underline mx-1">Privacy Policy</a>
             </div>
@@ -191,7 +191,7 @@ export default function SignupPage() {
           </div>
           {/* Login Link */}
           <div className="mt-6 text-center">
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-slate-400">
               Already have an account?{' '}
               <Link
                 href="/login"
